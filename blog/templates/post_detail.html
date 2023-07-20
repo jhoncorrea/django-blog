@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="text-center">
+
+  <h1>{{x.title}}</h1>
+  <h2 class="my-2 h5 text-muted">{{x.date|date:'F jS Y'}}</h2>
+
+  <img src="{{x.image.url}}" alt="{{x.title}}" class="img-fluid">
+
+
+  <div class="my-4">
+
+  {{x.description|safe}}
+  </div>
+</div>
+
+{% endblock %}
